@@ -1,22 +1,28 @@
-vw=7;
-th=pi/3.566;
-vwx0=vw*cos(th);
-vwy0=vw*sin(th);
-v1=2;
-v2=8;
-th1=pi/9.566;
-th2=pi/2.4323;
-vsx0=60;
-vsy0=0;
-vsz0=0;
-m=0.05;
-kw=0.2;
-kar=0.03;
-ppx=1200;
-ppy=0;
-ppz=0;
-mex=4.78787;
-mey=8.098;
-sigmax=2.58; %for 99% of the nodes to be in range
+vw=10;  %Average Wind speed Magnitude
+th=pi/3;  %Average angle of wind vector (on the xy plane)
+vwx0=vw*cos(th);  %x-component of wind speed
+vwy0=vw*sin(th);  %y-component of wind speed
+v1=3;   %Lower Interval of wind speed magnitude
+v2=25;   %Higher Interval of wind speed magnitude
+th1=pi/18;  %Lower interval of angle of wind speed vector
+th2=pi/2.5;  %Higher interval of angle of wind speed vector
+
+vsx0=2;  %Initial velocity of sensor nodes
+vsy0=4;
+vsz0=10;
+
+m=0.05; %Mass of sensor nodes
+kw=0.4;  
+kar=0.015;
+
+ppx=20; %Initial position of nodes when released
+ppy=20;
+ppz=1000;
+
+mex=0;
+mey=0;
+
+sigmax=2.58; 
 sigmay=2.58;
-g=0.10;
+
+g=3.69; %Mars gravitational acceleration
